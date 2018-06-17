@@ -20,9 +20,19 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        btnNotes=(Button) findViewById(R.id.btnNotes);
         btnExercises = (Button) findViewById(R.id.btnExercises);
         btnSetting = (Button) findViewById(R.id.btnSetting);
 
+        btnNotes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(MainActivity.this, Notes.class);
+                startActivity(intent);
+
+            }
+        });
         btnSetting.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

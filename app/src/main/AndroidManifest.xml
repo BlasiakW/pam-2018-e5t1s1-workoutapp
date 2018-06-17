@@ -18,8 +18,14 @@
         </activity>
         <activity android:name=".listExercise" />
         <activity android:name=".ViewExercise" />
-        <activity android:name=".SettingPage"></activity>
-        <receiver android:name=".AlarmNotificationReceiver"/>
+        <activity android:name=".SettingPage" />
+
+        <receiver android:name=".AlarmNotificationReceiver" />
+
+        <activity
+            android:name=".Notes"
+            android:label="@string/title_activity_notes"
+            android:theme="@style/Theme"></activity>
     </application>
 
 </manifest>
